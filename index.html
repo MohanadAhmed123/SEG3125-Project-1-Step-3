@@ -1,0 +1,662 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.min.css" rel="stylesheet">
+
+    <style>
+        section{
+            padding: 50px 0;
+        }
+
+        .nav.nav-tabs > .active {
+            color: #2B7A78;
+            background-color: white;
+            font-weight: bold;    
+            border-color: #2B7A78;
+            border-width: 2px;
+            border-bottom: 0px;
+        }
+
+        .nav.nav-tabs > :not(.active){
+            color: black;
+            background-color: #DEF2F1;    
+        }
+
+        
+        .nav-item > :hover {
+            color: #2B7A78;
+        }
+
+        img{
+            max-width: fit-content;
+
+        }
+    </style>
+
+    <title>Dentists On Demand - Dental Clinic Site</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    
+
+    <nav class="navbar fixed-top bg-light navbar-expand-md navbar-light pb-2">
+        <div class="container-xxl border-bottom border-2 border-secondary">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="#intro">
+            <img src="/assets/logo.jpg" alt="logo">
+          </a>
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#intro">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#specialists">Our Specialists</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item d-md-none">
+                <a class="nav-link" href="#booking">Book Appointment</a>
+              </li>
+              <li class="nav-item ms-2 d-none d-md-inline">
+                <a class="btn btn-secondary fw-bold" style="color: white;" href="#booking">Book Appointment</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Business Name and Type section -->
+    <section id="intro" class="bg-light">
+        <div class="container-lg mt-4">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-6 text-center mb-4">
+                    
+                    <div class="h1 text-primary mb-0">Dentists On Demand</div> 
+                    <div class="h5 text-end">Dental Clinic Site</div>
+                    
+                </div>
+        </div>
+        
+        
+        
+        <div class="container-fluid bg-info">
+            <div class="row justify-content-evenly">
+                <div class="col-md-5 px-2">
+                    <h3 class="h1 pt-5 mt-5 pb-3"> Secrevit fontes liquidum locoque pronaque</h3>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste repellendus sint, quisquam officia maxime inventore cumque nihil dolore doloribus, tempore, fugit sunt in ad harum deleniti molestias accusantium! Magnam, recusandae.</p>
+                    <div class="text-center">  
+                        <a href="#booking" class="btn btn-secondary btn-lg mt-5 fw-bold" style="color: white;">Book Appointment</a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid rounded-pill" src="/assets/home-imageNEW.jpg" alt="Home Page Picture">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+    <!-- Address, Phone & Work Hours section -->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-5 me-0 pe-0 text-start">
+                    <div class="h3 text-primary">Our Location</div>
+                    <p class="lead fw-normal">75 Laurier Ave E <br>
+                        Ottawa, ON, K1N 6N5</p>
+
+                    <div class="h3 text-primary mt-4">Phone Number & Email</div>
+                    <p class="lead fw-normal">+1-514-123-4567 <br>
+                        DentistsOnDemand@example.com</p>
+
+                    <div class="h3 text-primary mt-4">Work Hours</div>
+                    <p class="lead">
+                        <ul class="list-group list-group-flush col-lg-8 lead fw-normal fs-5">
+                            <li class="list-group-item">Monday: 8:00AM - 4:30PM</li>
+                            <li class="list-group-item">Tuesday: 8:00AM - 4:30PM</li>
+                            <li class="list-group-item">Wednesday: 8:00AM - 4:30PM</li>
+                            <li class="list-group-item">Thursday: 8:00AM - 4:30PM</li>
+                            <li class="list-group-item">Friday: 8:00AM - 4:30PM</li>
+                            <li class="list-group-item">Saturday: 9:00AM - 2:00PM</li>
+                            <li class="list-group-item">Sunday: Closed</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-4 ms-1 ps-1 text-start">
+                    <div class="h1 text-primary mb-3">Contact Us</div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Requestor Name</label>
+                        <input type="text" class="form-control border border-primary border-3" id="exampleFormControlInput1" placeholder="Full Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control border border-primary border-3" id="exampleFormControlInput2" placeholder="e.g. +1-123-456-7890">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                        <input type="email" class="form-control border border-primary border-3" id="exampleFormControlInput3" placeholder="e.g. name@example.com">
+                    </div>
+                    
+                    <label for="subject" class="form-label">What is your question/request about?</label>
+                    <select class="form-select border border-primary border-3 mb-3" id="subject">
+                        <option selected value="appointment">Appointment/Booking query</option>
+                        <option value="business">Business query</option>
+                        <option value="other">Other query</option>
+                      </select>
+
+                    <div class="mb-4">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control border border-primary border-3" id="exampleFormControlTextarea1" rows="3" placeholder="How can we help you? (Questions, requests, etc.)"></textarea>
+                    </div>
+
+                    <div class="mb-4 text-center">
+                        <a type="submit" class="btn btn-secondary fw-bold" style="color: white;" href="#contact" onClick="window.location.reload();">Send Message</a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- View Services section -->
+
+    <section id="services" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-7">
+                    <div class="h1 text-primary">Services</div>
+                    <p class="lead fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad amet tenetur voluptates magni libero similique sed velit id quaerat.</p>
+                </div><div class="col-1"></div>
+            </div>
+
+            <div class="row justify-content-start">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="container mt-4">
+                        <nav>
+                          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General Dentistry</button>
+                    
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Orthodontics</button>
+                    
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Cosmetic Dentistry</button>
+                    
+                          </div>
+                        </nav>
+                        <div class="tab-content border border-2 border-primary" style="background-color: white;" id="nav-tabContent">
+                    
+                          <div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Crown.jpg" class="card-img-top rounded ms-3" alt="Dental Filling Picture">
+                                            <div class="card-body">
+                                                <div class="h5 text-primary">Dental Fillings</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                  <span class="lead fw-bold">$159.99</span>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Healthy.jpg" class="card-img-top rounded ms-3" alt="Children's Densitry Picture">
+                                            <div class="card-body">
+                                            <div class="h5 text-primary">Children's Densitry</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Toothbrush.jpg" class="card-img-top rounded ms-3" alt="Deep Cleaning Picture">
+                                            <div class="card-body">
+                                            <div class="h5 text-primary">Deep Cleaning</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Dental care 2.jpg" class="card-img-top rounded ms-3" alt="Root Canal Therapy Picture">
+                                            <div class="card-body">
+                                            <div class="h5 text-primary">Root Canal Therapy</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Caries.jpg" class="card-img-top rounded ms-3" alt="Cavity Inspection Picture">
+                                            <div class="card-body">
+                                            <div class="h5 text-primary">Cavity Inspection</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Removal.jpg" class="card-img-top rounded ms-3" alt="Wisdom Teeth Extraction Picture">
+                                            <div class="card-body">
+                                            <div class="h5 text-primary">Wisdom Teeth Extraction</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                          </div>
+                    
+                        <div class="tab-pane fade p-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Brace.jpg" class="card-img-top rounded ms-3" alt="Traditional Dental Braces Picture">
+                                            <div class="card-body">
+                                                <div class="h5 text-primary">Traditional Dental Braces</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                  <span class="lead fw-bold">$159.99</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/False Teeth.jpg" class="card-img-top rounded ms-3" alt="Invisalign (Clear Dental Braces) Picture">
+                                            <div class="card-body">
+                                            <div class="h5 text-primary"> Clear Dental Braces<br> (Invisalign)</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Crooked.jpg" class="card-img-top rounded ms-3" alt="Orthodontist Consultation Picture">
+                                            <div class="card-body">
+                                             <div class="h5 text-primary">Orthodontist Consultation</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="tab-pane fade p-3" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Whitening.jpg" class="card-img-top rounded ms-3" alt="Teeth Whitening Picture">
+                                            <div class="card-body">
+                                                <div class="h5 text-primary">Teeth Whitening</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                  <span class="lead fw-bold">$159.99</span>
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Vener.jpg" class="card-img-top rounded ms-3" alt="Dental Veneers Picture">
+                                            <div class="card-body">
+                                            <div class="h5 text-primary">Dental Veneers</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card my-4" style="width: fluid;">
+                                            <img src="/assets/Implant.jpg" class="card-img-top rounded ms-3" alt="Dental Implants Picture">
+                                            <div class="card-body">
+                                            <div class="h5 text-primary">Dental Implants</div>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div class="text-success fs-6">Starting from
+                                                <span class="lead fw-bold">$159.99</span>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                          
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        
+        
+
+    </section>
+
+
+
+    <!-- View Specialists section -->
+    
+    <section id="specialists">
+        <div class="h1 text-primary mb-0 text-center">Meet Our Specialists</div>
+
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div class="card my-4 px-4 rounded border-0 bg-light" style="width: fluid;">
+                        <img src="/assets/dentistRichard.jpg" class="card-img-top rounded-circle mt-5 border border-3 border-primary" alt="Dentist Picture">
+                        <div class="card-body">
+                            <div class="text-center my-3">
+                                <div class="h4 text-primary">Dr. Kevin Robertson</div>
+                                <div class="h5 fw-bold">General Dentist</div>
+                            </div>
+                        
+                          <p class="card-text">Lorem ipsum dolor sit amet, elit. Corrupti rem nihil, blanditiis delectus at cupiditate, vitae optio dolor ratione, perferendis recusandae veritatis illo sunt quas ullam veniam culpa omnis.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card my-4 px-4 rounded border-0 bg-light" style="width: fluid;">
+                        <img src="/assets/dentistAnne.jpg" class="card-img-top rounded-circle mt-5 border border-3 border-primary" alt="Dentist Picture">
+                        <div class="card-body">
+                            <div class="text-center my-3">
+                                <div class="h4 text-primary">Dr. Anne Heggins</div>
+                                <div class="h5 fw-bold">Orthodontist</div>
+                            </div>
+                        
+                          <p class="card-text">Lorem ipsum dolor sit amet, elit. Corrupti rem nihil, blanditiis delectus at cupiditate, vitae optio dolor ratione, perferendis recusandae veritatis illo sunt quas ullam veniam culpa omnis.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card my-4 px-4 rounded border-0 bg-light" style="width: fluid;">
+                        <img src="/assets/dentist1test.jpg" class="card-img-top rounded-circle mt-5 border border-3 border-primary" alt="Dentist Picture">
+                        <div class="card-body">
+                            <div class="text-center my-3">
+                                <div class="h4 text-primary">Dr. Karim Kasem</div>
+                                <div class="h5 fw-bold">Oral Surgeon</div>
+                            </div>
+                        
+                          <p class="card-text">Lorem ipsum dolor sit amet, elit. Corrupti rem nihil, blanditiis delectus at cupiditate, vitae optio dolor ratione, perferendis recusandae veritatis illo sunt quas ullam veniam culpa omnis.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Book Appointment - Selection section -->
+
+    <section id="booking" class="bg-light">
+        <div class="h1 text-primary text-center">Book an Appointment</div>
+
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-1 border border-0 rounded bg-info"></div>
+                <div class="col-4 bg-info">
+                    <div class="h3 text-center">Appointment Information</div>
+                    <label for="service list" class="form-label">Select Service</label>
+                    <select class="form-select border border-primary border-3 mb-3" id="service list">
+                        <option selected value="select service">Please select an option...</option>
+                        <option value="Dental Fillings">Dental Fillings</option>
+                        <option value="Children's Densitry">Children's Densitry</option>
+                        <option value="Deep Cleaning">Deep Cleaning</option>
+                        <option value="Root Canal Therapy">Root Canal Therapy</option>
+                        <option value="Cavity Inspection">Cavity Inspection</option>
+                        <option value="Wisdom Teeth Extraction">Wisdom Teeth Extraction</option>
+                        <option value="Traditional Dental Braces">Traditional Dental Braces</option>
+                        <option value="Clear Dental Braces
+                        (Invisalign)">Clear Dental Braces
+                            (Invisalign)</option>
+                        <option value="Orthodontist Consultation">Orthodontist Consultation</option>
+                        <option value="Teeth Whitening">Teeth Whitening</option>
+                        <option value="Dental Veneers">Dental Veneers</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                    </select>
+
+                    <label for="specialist list" class="form-label">Select Specialist</label>
+                    <select class="form-select border border-primary border-3 mb-3" id="specialist list">
+                        <option selected value="appointment">Please select an option...</option>
+                        <option value="Dr. Kevin Robertson">Dr. Kevin Robertson</option>
+                        <option value="Dr. Anne Heggins">Dr. Anne Heggins</option>
+                        <option value="Dr. Karim Kasem">Dr. Karim Kasem</option>
+                    </select>
+
+                    <div class="row justify-content-evenly">
+                        <div class="col-5">
+                            <label for="date">Select Date</label>
+                            <br>
+                            <input class="px-2 border border-primary border-3 rounded fw-normal" type="date" id="date" name="Select Date">
+                        </div>
+                        <div class="col-5">
+                            <label for="time">Select Time</label>
+                            <br>
+                            <input class="px-2 border border-primary border-3 rounded fw-normal" type="time" id="time" name="Select Time">
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <label for="reminders" class="form-label mt-4 pt-2 mb-3">Would you like to receive reminders for your appointment by SMS and Email? <br> (Check the applicable checkboxes below)</label>
+                                <div class="form-check mb-2 border border-primary border-3 ps-4 bg-light" id="reminders">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked>
+                                    <label class="form-check-label" for="flexCheckDefault1">
+                                    Send a reminder 1 day before appointment
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2 border border-primary border-3 ps-4 bg-light">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                    Send a reminder 2 days before appointment
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2 border border-primary border-3 ps-4 bg-light">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                    <label class="form-check-label" for="flexCheckDefault3">
+                                    Send a reminder 3 days before appointment
+                                    </label>
+                                </div>
+                                <div class="form-check border border-primary border-3 ps-4 bg-light">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                    Send a reminder 1 week before appointment
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="my-4 text-center">
+                        <a type="submit" class="btn btn-secondary fw-bold" style="color: white;" href="#contact-info">Enter Your Information</a>
+                    </div>
+                    
+                    <!-- Book Appointment - Patient Information section -->
+                    <div class="h3 text-center mt-4" id="contact-info">Contact Information</div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Requestor Name</label>
+                        <input type="text" class="form-control border border-primary border-3 mb-3" id="exampleFormControlInput1" placeholder="First Name">
+                        <input type="text" class="form-control border border-primary border-3" id="exampleFormControlInput1" placeholder="Last Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control border border-primary border-3" id="exampleFormControlInput2" placeholder="e.g. +1-123-456-7890">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                        <input type="email" class="form-control border border-primary border-3" id="exampleFormControlInput3" placeholder="e.g. name@example.com">
+                    </div>
+
+                    <div class="row justify-content-center my-4 text-center">
+                        <div class="col-4">
+                            <a type="submit" class="btn btn-outline-danger px-5 ms-2 fw-bold" href="#booking" onClick="window.location.reload();">Cancel</a>
+                        </div>
+                        <div class="col-6">
+                            <a type="submit" class="btn btn-secondary fw-bold" style="color: white;" data-bs-toggle="modal" href="#exampleModal" role="button">
+                                Book Appointment
+                              </a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-1 border border-0 rounded bg-info"></div>
+
+                
+        <!-- Booking Confirmation section (Modal) -->
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h3 class="modal-title text-center ps-4 text-primary" id="exampleModalLabel">Booking Confirmation</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="h4 ms-5">Your Booking Details</div>
+                                <div class="container mb-2">
+                                    <div class="row mx-0 p-0" style="border-style: solid; border-width: 3.5px; border-color: #2B7A78;">
+                                        <div class="col m-0 p-1" style="color: white; background-color: #2B7A78;">Selected Service:</div>
+                                        <div class="col m-0 p-1" style="background-color: white;">Cavity Inspection</div>
+                                    </div>
+          
+                                    <div class="row my-2 mx-0 p-0" style="border-style: solid; border-width: 3.5px; border-color: #2B7A78;">
+                                      <div class="col m-0 p-1" style="color: white; background-color: #2B7A78;">Doctor's Name:</div>
+                                      <div class="col m-0 p-1" style="background-color: white;">Karim Kasem</div>
+                                  </div>
+          
+                                  <div class="row my-2 mx-0 p-0" style="border-style: solid; border-width: 3.5px; border-color: #2B7A78;">
+                                      <div class="col m-0 p-1" style="color: white; background-color: #2B7A78;">Date:</div>
+                                      <div class="col m-0 p-1" style="background-color: white;">Monday, May 30, 2022</div>
+                                  </div>
+          
+                                  <div class="row my-2 mx-0 p-0" style="border-style: solid; border-width: 3.5px; border-color: #2B7A78;">
+                                      <div class="col m-0 p-1" style="color: white; background-color: #2B7A78;">Time:</div>
+                                      <div class="col m-0 p-1" style="background-color: white;">9:30AM - 10:30AM</div>
+                                  </div>
+          
+                                  <div class="row my-2 mx-0 p-0" style="border-style: solid; border-width: 3.5px; border-color: #2B7A78;">
+                                      <div class="col m-0 p-1" style="color: white; background-color: #2B7A78;">Location:</div>
+                                      <div class="col m-0 p-1" style="background-color: white;">75 Laurier Ave E Ottawa, ON, K1N 6N5</div>
+                                  </div>
+
+                                  <p class="lead fs-5 fw-bold mt-5">
+                                    A confirmation email was sent you with your booking details. <br> Thank you for choosing Dentists on Demand!
+                                  </p>
+          
+                                
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary fw-bold px-5" style="color: white;" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                
+
+            </div>
+        </div>
+
+    </section>
+
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
